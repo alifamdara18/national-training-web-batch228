@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #070e1a;
+    color: #f1f5f9;
+  }
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFF1C5 0%, #E5B84B 50%, #C3922E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-metallic-border {
+  border-image: linear-gradient(135deg, #ffd700, #b8860b, #4b6cb7) 1;
+}
+
+.glow-navy-gold {
+  box-shadow: 0 0 40px -10px rgba(229, 184, 75, 0.15), 0 0 80px -20px rgba(37, 99, 235, 0.2);
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+

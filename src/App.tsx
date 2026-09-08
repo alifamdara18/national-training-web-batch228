@@ -7,10 +7,8 @@ import { InteractiveQuiz } from './components/InteractiveQuiz';
 import { TrainerProfile } from './components/TrainerProfile';
 import { TestimonialsSection } from './components/TestimonialsSection';
 import { PricingSection } from './components/PricingSection';
-import { FAQSection } from './components/FAQSection';
 import { Footer } from './components/Footer';
 import { RegistrationModal } from './components/RegistrationModal';
-import { FloatingCTA } from './components/FloatingCTA';
 
 export default function App() {
   const [registerModalOpen, setRegisterModalOpen] = useState(false);
@@ -50,16 +48,10 @@ export default function App() {
 
         {/* Biaya & Investasi (Rp 399.000 Special Batch) */}
         <PricingSection onOpenRegister={handleOpenRegister} />
-
-        {/* Tanya Jawab (FAQ) */}
-        <FAQSection />
       </main>
 
       {/* Footer */}
       <Footer />
-
-      {/* Floating Quick Action Bar */}
-      <FloatingCTA onOpenRegister={handleOpenRegister} />
 
       {/* Interactive Registration & E-Ticket Modal */}
       <RegistrationModal

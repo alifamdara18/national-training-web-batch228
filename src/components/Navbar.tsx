@@ -23,8 +23,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister }) => {
     { label: 'Kurikulum & Fitur', href: '#kurikulum' },
     { label: 'Fasilitas Bonus', href: '#fasilitas' },
     { label: 'Testimoni', href: '#testimoni' },
-    { label: 'Investasi (399k)', href: '#investasi' },
-    { label: 'FAQ', href: '#faq' },
   ];
 
   return (
@@ -36,8 +34,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister }) => {
             <Sparkles className="w-3 h-3 text-amber-400 animate-pulse" /> Promo Subsidi
           </span>
           <span>
-            Pendaftaran <strong className="text-white">{TRAINING_CONFIG.programTitle}</strong> hanya{' '}
-            <strong className="text-amber-400 font-bold">{TRAINING_CONFIG.formattedPrice}</strong>
+            Pendaftaran <strong className="text-white">{TRAINING_CONFIG.programTitle}</strong> Batch 18 Telah Dibuka!
           </span>
           <span className="hidden sm:inline text-slate-400">|</span>
           <span className="hidden sm:inline text-amber-200/90">Tersisa {TRAINING_CONFIG.seatsRemaining} Slot Terakhir!</span>
@@ -99,24 +96,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister }) => {
               <PhoneCall className="w-3.5 h-3.5 text-emerald-400" />
               <span>Konsultasi WA</span>
             </a>
-
-            <button
-              onClick={onOpenRegister}
-              className="relative inline-flex items-center gap-2 px-4 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider text-slate-950 bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500 hover:from-amber-400 hover:to-amber-500 shadow-md shadow-amber-500/20 hover:shadow-amber-500/30 transition-all transform hover:-translate-y-0.5 active:translate-y-0"
-            >
-              <span>Daftar Sekarang • 399k</span>
-              <ChevronRight className="w-4 h-4" />
-            </button>
           </div>
 
           {/* Mobile Menu Toggle Button */}
           <div className="flex sm:hidden items-center gap-2">
-            <button
-              onClick={onOpenRegister}
-              className="px-3 py-1.5 rounded-lg text-xs font-bold bg-amber-400 text-slate-950"
-            >
-              399k
-            </button>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="p-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 focus:outline-none"
@@ -141,15 +124,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister }) => {
               </a>
             ))}
             <div className="pt-3 flex flex-col gap-2.5">
-              <button
-                onClick={() => {
-                  setMobileMenuOpen(false);
-                  onOpenRegister();
-                }}
-                className="w-full py-3 rounded-xl font-bold text-center text-sm uppercase tracking-wider text-slate-950 bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500 shadow-lg shadow-amber-500/25"
-              >
-                Daftar Pelatihan • Rp 399.000
-              </button>
               <a
                 href={`https://wa.me/${TRAINING_CONFIG.contactWhatsapp}?text=Halo%20Admin%20Amdara%20Training,%20saya%20ingin%20tanya%20tentang%20National%20Public%20Speaking%20399k`}
                 target="_blank"

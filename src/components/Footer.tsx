@@ -65,9 +65,6 @@ export const Footer: React.FC = () => {
               <li>
                 <a href="#investasi" className="hover:text-amber-300 transition-colors">Biaya (Rp 399k)</a>
               </li>
-              <li>
-                <a href="#faq" className="hover:text-amber-300 transition-colors">Pertanyaan Umum</a>
-              </li>
             </ul>
           </div>
 

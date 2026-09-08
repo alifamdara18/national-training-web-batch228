@@ -76,9 +76,9 @@ export const TrainerProfile: React.FC = () => {
                 </div>
               </div>
 
-              {/* Quote */}
-              <div className="p-4 rounded-xl bg-blue-950/20 border-l-2 border-l-amber-400 text-xs text-slate-300 italic">
-                "Kemampuan berbicara di depan umum bukanlah bakat lahir. Itu adalah seni penguasaan teknik dan jam terbang. Ketika tekniknya benar, rasa percaya diri akan hadir secara alami."
+              {/* Philosophy / About Quote */}
+              <div className="p-4 sm:p-5 rounded-xl bg-blue-950/20 border-l-2 border-l-amber-400 text-xs sm:text-sm text-slate-200 italic leading-relaxed">
+                "Semua itu bukan hanya milik orang tertentu. Kemampuan berbicara adalah skill yang bisa dilatih. Yang membedakan seseorang yang bersinar dengan yang masih tersembunyi bukan karena dia tidak pernah takut, tetapi karena dia memilih untuk bertumbuh dan berani melangkah."
               </div>
 
             </div>

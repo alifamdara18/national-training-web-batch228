@@ -76,13 +76,11 @@ export const CurriculumFeatures: React.FC<CurriculumFeaturesProps> = ({ onOpenRe
     }
   ];
 
-  const targetAudiences = [
-    { label: "Mahasiswa & Fresh Graduate", reason: "Sidang skripsi, lomba debat, wawancara kerja, dan organisasi kampus." },
-    { label: "Karyawan & Profesional", reason: "Presentasi rapat, pitching ke pimpinan, dan promosi jenjang karier." },
-    { label: "Leader, Manajer & Supervisor", reason: "Memimpin briefing tim, menginspirasi bawahan, dan membawakan town hall." },
-    { label: "Entrepreneur & Founder", reason: "Pitching ke calon investor, negosiasi klien besar, dan mewakili brand." },
-    { label: "Guru, Dosen & Trainer", reason: "Menyampaikan materi dengan dinamis agar peserta didik tidak bosan." },
-    { label: "Calon MC & Moderator", reason: "Membangun karier profesional sebagai pembawa acara formal maupun non-formal." }
+  const journeyPoints = [
+    { label: "✨ Menemukan keberanian dalam diri", reason: "Membangun keberanian otentik saat tampil dan mengemukakan pendapat di depan siapapun." },
+    { label: "✨ Mengaktifkan potensi yang selama ini tersembunyi", reason: "Menggali daya pikat vokal dan rasa percaya diri alami yang belum pernah terpancar sebelumnya." },
+    { label: "✨ Membentuk komunikasi yang penuh percaya diri", reason: "Menguasai gestur, artikulasi, dan ketenangan agar setiap kata disampaikan dengan meyakinkan." },
+    { label: "✨ Menjadi pribadi yang lebih berdampak", reason: "Menginspirasi, meyakinkan, dan memberi pengaruh positif nyata bagi audiens Anda." }
   ];
 
   return (
@@ -285,26 +283,28 @@ export const CurriculumFeatures: React.FC<CurriculumFeaturesProps> = ({ onOpenRe
           </div>
         </div>
 
-        {/* FITUR 4: SIAPA YANG WAJIB MENGIKUTI */}
-        <div className="rounded-3xl bg-[#081220] border border-slate-800 p-8 sm:p-10">
+        {/* FITUR 4: BRAND & VALUE SECTION */}
+        <div className="rounded-3xl bg-[#081220] border border-amber-500/30 p-8 sm:p-10 shadow-2xl">
           <div className="text-center max-w-2xl mx-auto mb-10 space-y-2">
-            <h3 className="text-xl sm:text-2xl font-bold text-white font-cinzel">
-              Siapa yang Wajib Mengikuti National Public Speaking Ini?
+            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-400/10 text-amber-300 border border-amber-400/30 text-xs font-bold uppercase tracking-wider">
+              {TRAINING_CONFIG.programTitle}
+            </div>
+            <h3 className="text-2xl sm:text-3xl font-extrabold text-white font-cinzel mt-2">
+              "{TRAINING_CONFIG.tagline}"
             </h3>
-            <p className="text-xs sm:text-sm text-slate-400">
-              Pelatihan ini dirancang fleksibel untuk berbagai kebutuhan karier dan akademik Anda.
+            <p className="text-sm font-semibold text-amber-300 mt-2">
+              Perjalanan Anda Untuk:
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {targetAudiences.map((aud, i) => (
-              <div key={i} className="p-4 rounded-xl bg-[#0C1A30] border border-slate-800/80 hover:border-blue-500/40 transition-all">
-                <div className="flex items-center gap-2 font-bold text-sm text-white mb-1.5">
-                  <UserCheck className="w-4 h-4 text-amber-400 shrink-0" />
-                  <span>{aud.label}</span>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {journeyPoints.map((point, i) => (
+              <div key={i} className="p-5 rounded-2xl bg-[#0C1A30] border border-slate-800 hover:border-amber-400/40 transition-all">
+                <div className="flex items-center gap-2 font-bold text-sm sm:text-base text-amber-300 mb-1.5">
+                  <span>{point.label}</span>
                 </div>
-                <p className="text-xs text-slate-300 pl-6">
-                  {aud.reason}
+                <p className="text-xs sm:text-sm text-slate-300 pl-1 leading-relaxed">
+                  {point.reason}
                 </p>
               </div>
             ))}

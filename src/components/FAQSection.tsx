@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { HelpCircle, ChevronDown, Sparkles } from 'lucide-react';
-import { FAQ_LIST } from '../data/trainingData';
+import { FAQ_LIST, TRAINING_CONFIG } from '../data/trainingData';
 
 export const FAQSection: React.FC = () => {
   const [openId, setOpenId] = useState<string>('faq-1');
@@ -23,7 +23,7 @@ export const FAQSection: React.FC = () => {
             <span className="gold-gradient-text font-cinzel">Amdara Training</span>
           </h2>
           <p className="text-slate-300 text-xs sm:text-sm">
-            Semua yang perlu Anda ketahui sebelum bergabung di program National Public Speaking.
+            Semua yang perlu Anda ketahui sebelum bergabung di program {TRAINING_CONFIG.programTitle}.
           </p>
         </div>
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Sparkles, HelpCircle, CheckCircle2, RotateCcw, ArrowRight, Award } from 'lucide-react';
+import { TRAINING_CONFIG } from '../data/trainingData';
 
 interface QuizProps {
   onOpenRegister: () => void;
@@ -76,7 +77,7 @@ export const InteractiveQuiz: React.FC<QuizProps> = ({ onOpenRegister }) => {
         level: "Tingkat Kecemasan Tinggi (High Anxiety)",
         badgeColor: "bg-red-500/20 text-red-300 border-red-500/30",
         message: "Anda sering merasa tertahan oleh rasa takut dan blank saat berbicara. Ini sangat wajar dialami pemula.",
-        recommendation: "Anda sangat direkomendasikan mengikuti National Public Speaking Amdara Training. Modul Day 1 (Teknik 90 Detik Tenang) akan mengubah rasa takut Anda menjadi rasa percaya diri seketika."
+        recommendation: `Anda sangat direkomendasikan mengikuti ${TRAINING_CONFIG.programTitle} Amdara Training. Modul Day 1 (Teknik 90 Detik Tenang) akan mengubah rasa takut Anda menjadi rasa percaya diri seketika.`
       };
     } else if (percentage <= 75) {
       return {

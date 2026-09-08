@@ -78,16 +78,16 @@ export const HeroBanner: React.FC<HeroBannerProps> = ({ onOpenRegister }) => {
             </div>
 
             {/* Main Headline with Gold & Blue Harmony */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-extrabold leading-[1.15] text-white tracking-tight">
-              Bicara Penuh Percaya Diri,{' '}
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[46px] font-extrabold leading-[1.2] text-white tracking-tight">
+              Saksikan bagaimana seseorang mampu berdiri di depan banyak orang dengan{' '}
               <span className="gold-gradient-text block mt-1 sm:inline sm:mt-0 font-cinzel">
-                Pukau Audiens & Kuasai Panggung
+                tenang, percaya diri, dan energi yang mampu membuat audiens terpaku mendengarkan.
               </span>
             </h1>
 
             {/* Subheading */}
             <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              Program pelatihan intensif <strong className="text-white">National Public Speaking</strong> by <span className="text-amber-300 font-semibold">{TRAINING_CONFIG.name}</span>. Hapus demam panggung, kuasai vokal karismatik, dan buat setiap presentasi Anda memikat dari awal hingga akhir.
+              Bayangkan jika suatu hari nanti Anda berada di posisi yang sama. Berdiri di atas panggung dengan tatapan penuh keyakinan, suara berkarakter, dan setiap kata menyentuh hati audiens.
             </p>
 
             {/* Special Price Banner Card */}
@@ -210,7 +210,7 @@ export const HeroBanner: React.FC<HeroBannerProps> = ({ onOpenRegister }) => {
               <div className="my-5 relative rounded-2xl overflow-hidden border border-blue-500/30 bg-[#070E1A] group">
                 <img
                   src="https://images.unsplash.com/photo-1475721027785-f74eccf877e2?w=800&auto=format&fit=crop&q=80"
-                  alt="Suasana Pelatihan National Public Speaking Amdara Training"
+                  alt="Suasana Pelatihan INNERPEACE PUBLIC SPEAKING Amdara Training"
                   className="w-full h-52 object-cover object-center group-hover:scale-105 transition-transform duration-700 opacity-85"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#070E1A] via-transparent to-black/30" />
@@ -224,10 +224,10 @@ export const HeroBanner: React.FC<HeroBannerProps> = ({ onOpenRegister }) => {
                 {/* Overlaid Title on Image */}
                 <div className="absolute bottom-3 left-3 right-3">
                   <p className="text-xs text-amber-300 font-semibold tracking-wide uppercase">
-                    Metode Amdara Experiential Learning
+                    🎤 Full Praktik Online, Rasa Offline
                   </p>
-                  <p className="text-sm font-bold text-white line-clamp-1">
-                    Praktik Langsung, Bedah Vokal & Feedback Seketika
+                  <p className="text-xs sm:text-sm font-medium text-slate-200 line-clamp-2">
+                    "Karena perubahan tidak terjadi hanya dengan mendengar... Perubahan terjadi ketika Anda berlatih, mengalami, dan bertumbuh."
                   </p>
                 </div>
               </div>

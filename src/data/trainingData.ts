@@ -2,8 +2,8 @@ import { CurriculumModule, TrainingBonus, FAQItem, Testimonial } from '../types'
 
 export const TRAINING_CONFIG = {
   name: "Amdara Training",
-  programTitle: "National Public Speaking",
-  tagline: "Kuasai Panggung, Bicara Penuh Wibawa & Pengaruhi Audiens Anda",
+  programTitle: "INNERPEACE PUBLIC SPEAKING",
+  tagline: "Bukan hanya belajar berbicara...",
   price: 399000,
   formattedPrice: "Rp 399.000",
   originalPrice: 1250000,
@@ -15,7 +15,7 @@ export const TRAINING_CONFIG = {
   seatsTotal: 50,
   seatsRemaining: 7,
   contactWhatsapp: "6281234567890", // Official Amdara Training WhatsApp
-  format: "Live Interactive via Zoom + Praktik Langsung 1-on-1",
+  format: "🎤 Full Praktik Online, Rasa Offline",
   targetAudience: "Mahasiswa, Fresh Graduate, Karyawan, Leader, & Entrepreneur"
 };
 
@@ -123,7 +123,7 @@ export const INITIAL_TESTIMONIALS: Testimonial[] = [
     companyOrCampus: "Universitas Indonesia",
     avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80",
     rating: 5,
-    comment: "Kelas National Public Speaking ini sangat interaktif! Bukan cuma teori membosankan, tapi kami langsung dipaksa praktik dan dibedah kesalahannya satu-satu secara ramah. Feedback 1-on-1 mentornya sangat membuka mata. Saya jadi jauh lebih percaya diri saat orasi dan memimpin rapat.",
+    comment: "Kelas INNERPEACE PUBLIC SPEAKING ini sangat interaktif! Bukan cuma teori membosankan, tapi kami langsung dipaksa praktik dan dibedah kesalahannya satu-satu secara ramah. Feedback 1-on-1 mentornya sangat membuka mata. Saya jadi jauh lebih percaya diri saat orasi dan memimpin rapat.",
     date: "Juli 2026",
     tag: "Mahasiswa",
     verified: true
@@ -177,7 +177,7 @@ export const FAQ_LIST: FAQItem[] = [
     id: "faq-4",
     category: "Biaya & Sertifikat",
     question: "Apakah sertifikatnya resmi dan dapat dicantumkan di CV / LinkedIn?",
-    answer: "Ya, sertifikat kelulusan National Public Speaking dikeluarkan secara resmi oleh Amdara Training lengkap dengan nomor sertifikat terverifikasi, jam pelatihan (JP), dan silabus kompetensi di halaman belakang."
+    answer: "Ya, sertifikat kelulusan INNERPEACE PUBLIC SPEAKING dikeluarkan secara resmi oleh Amdara Training lengkap dengan nomor sertifikat terverifikasi, jam pelatihan (JP), dan silabus kompetensi di halaman belakang."
   },
   {
     id: "faq-5",
@@ -189,23 +189,23 @@ export const FAQ_LIST: FAQItem[] = [
 
 export const PAIN_POINTS = [
   {
-    problem: "Keringat Dingin & Jantung Berdebar Kencang",
-    description: "Baru dipanggil namanya saja sudah gemetar, suara tercekat di tenggorokan, dan nafas tersengal-sengal.",
-    solution: "Kuasai teknik Grounding Fisik & Pernapasan 4-7-8 untuk menetralkan kortisol dalam 90 detik."
+    problem: "🎤 Presentasi tanpa rasa takut",
+    description: "Kuasai teknik menenangkan pikiran dan tubuh agar bisa tampil tenang dan percaya diri di setiap sesi presentasi.",
+    solution: "Saksikan bagaimana Anda mampu berdiri di depan banyak orang dengan tenang dan energi terpaku mendengarkan."
   },
   {
-    problem: "Tiba-Tiba 'Blank' & Lupa Materi di Depan Orang",
-    description: "Semua poin di kepala mendadak hilang saat melihat tatapan mata audiens atau pimpinan.",
-    solution: "Gunakan Mind Map Storytelling & Anchor Words agar presentasi mengalir lancar tanpa hafalan kaku."
+    problem: "🎤 Berbicara di depan banyak orang dengan tenang",
+    description: "Atasi demam panggung dan ketegangan, ubah rasa cemas menjadi ketenangan yang terpancar secara alami.",
+    solution: "Berdiri di atas panggung dengan tatapan penuh keyakinan dan suara berkarakter."
   },
   {
-    problem: "Suara Monoton, Pelan, dan Penuh Gumaman 'Umm... Eee...'",
-    description: "Audiens cepat mengantuk, membuka gadget, atau tidak menangkap pesan utama yang Anda bawa.",
-    solution: "Pelajari Vocal Dynamics, tempo artikulasi berbobot, dan trik Power Pause untuk menggantikan filler words."
+    problem: "🎤 Membawa ide besar dengan penuh keyakinan",
+    description: "Sampaikan gagasan penting Anda secara terstruktur, lugas, serta menyentuh hati audiens secara mendalam.",
+    solution: "Setiap kata menyentuh hati audiens dan membuat mereka antusias menyimak pesan Anda."
   },
   {
-    problem: "Bahasa Tubuh Kaku Seperti Patung",
-    description: "Bingung tangan harus ditaruh di mana, tatapan mata liar ke langit-langit, dan postur tampak tidak yakin.",
-    solution: "Kuasai Open Gestures, authoritative stance, dan kontak mata magnetik yang memancarkan aura pemimpin."
+    problem: "🎤 Menjadi seseorang yang dipercaya karena cara berkomunikasi",
+    description: "Bentuk gaya komunikasi yang berwibawa, penuh percaya diri, dan membangun respek tinggi dari audiens.",
+    solution: "Aktifkan potensi tersembunyi dan jadilah pribadi yang lebih berdampak."
   }
 ];

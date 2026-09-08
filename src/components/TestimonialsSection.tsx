@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Star, MessageSquarePlus, CheckCircle2, Quote, Sparkles, Filter, X } from 'lucide-react';
-import { INITIAL_TESTIMONIALS } from '../data/trainingData';
+import { INITIAL_TESTIMONIALS, TRAINING_CONFIG } from '../data/trainingData';
 import { Testimonial } from '../types';
 
 export const TestimonialsSection: React.FC = () => {
@@ -188,7 +188,7 @@ export const TestimonialsSection: React.FC = () => {
             Slot Testimoni Berikutnya adalah Cerita Sukses Anda!
           </h4>
           <p className="text-xs text-slate-300 max-w-xl mx-auto">
-            Bergabunglah dengan ratusan alumni National Public Speaking Amdara Training Batch ini dan rasakan perubahan percaya diri Anda sejak hari pertama.
+            Bergabunglah dengan ratusan alumni {TRAINING_CONFIG.programTitle} Amdara Training Batch ini dan rasakan perubahan percaya diri Anda sejak hari pertama.
           </p>
         </div>
 

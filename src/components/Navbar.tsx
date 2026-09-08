@@ -36,7 +36,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister }) => {
             <Sparkles className="w-3 h-3 text-amber-400 animate-pulse" /> Promo Subsidi
           </span>
           <span>
-            Pendaftaran <strong className="text-white">National Public Speaking</strong> hanya{' '}
+            Pendaftaran <strong className="text-white">{TRAINING_CONFIG.programTitle}</strong> hanya{' '}
             <strong className="text-amber-400 font-bold">{TRAINING_CONFIG.formattedPrice}</strong>
           </span>
           <span className="hidden sm:inline text-slate-400">|</span>
@@ -70,7 +70,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenRegister }) => {
                 </span>
               </div>
               <p className="text-[10px] text-amber-300/80 tracking-wider uppercase font-semibold">
-                National Public Speaking
+                {TRAINING_CONFIG.programTitle}
               </p>
             </div>
           </a>

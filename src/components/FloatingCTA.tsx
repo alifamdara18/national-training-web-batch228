@@ -29,7 +29,7 @@ export const FloatingCTA: React.FC<FloatingCTAProps> = ({ onOpenRegister }) => {
           <div>
             <div className="flex items-center gap-1.5">
               <span className="text-xs font-bold text-white leading-none">
-                National Public Speaking
+                {TRAINING_CONFIG.programTitle}
               </span>
               <span className="text-[10px] text-red-400 font-bold">
                 Sisa {TRAINING_CONFIG.seatsRemaining} Slot!

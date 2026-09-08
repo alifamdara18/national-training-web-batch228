@@ -28,7 +28,7 @@ export const Footer: React.FC = () => {
                   </span>
                 </div>
                 <p className="text-[10px] text-amber-400 font-semibold tracking-wider uppercase">
-                  National Public Speaking
+                  {TRAINING_CONFIG.programTitle}
                 </p>
               </div>
             </div>
@@ -161,7 +161,7 @@ export const Footer: React.FC = () => {
               &copy; {new Date().getFullYear()} <strong className="text-white">Amdara Training</strong>. Seluruh Hak Cipta Dilindungi Undang-Undang.
             </p>
             <p className="text-slate-400 text-[10px] mt-0.5">
-              National Public Speaking adalah merek program resmi dari Amdara Training.
+              {TRAINING_CONFIG.programTitle} adalah merek program resmi dari Amdara Training.
             </p>
           </div>
 

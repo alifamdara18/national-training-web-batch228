@@ -46,8 +46,8 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onOpenRegister }
             Investasi Leher ke Atas Terbaik untuk{' '}
             <span className="gold-gradient-text font-cinzel">Masa Depan Karier Anda</span>
           </h2>
-          <p className="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto">
-            Jangan biarkan rasa takut berbicara menghambat promosi jabatan atau kesempatan beasiswa Anda. Dapatkan pembekalan lengkap kelas nasional dengan biaya subsidi terjangkau.
+          <p className="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto italic">
+            "Karena perubahan tidak terjadi hanya dengan mendengar... Perubahan terjadi ketika Anda berlatih, mengalami, dan bertumbuh."
           </p>
         </div>
 
@@ -72,14 +72,14 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onOpenRegister }
                     {TRAINING_CONFIG.batchNumber}
                   </span>
                   <span className="text-xs text-amber-300 font-semibold">
-                    • Slot Terbatas {TRAINING_CONFIG.seatsTotal} Peserta
+                    • {TRAINING_CONFIG.format}
                   </span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-white mt-2 font-cinzel">
                   {TRAINING_CONFIG.programTitle}
                 </h3>
-                <p className="text-xs sm:text-sm text-slate-300 mt-1">
-                  Program intensif lengkap dari Amdara Training. Sudah termasuk 6 Modul Utama, 8 Fasilitas Bonus, dan Evaluasi Praktik 1-on-1.
+                <p className="text-xs sm:text-sm font-medium text-amber-300 mt-1 italic">
+                  "{TRAINING_CONFIG.tagline}"
                 </p>
               </div>
 

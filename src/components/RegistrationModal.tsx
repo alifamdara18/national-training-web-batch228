@@ -95,7 +95,7 @@ Jadwal: ${ticketData.batchDate}`;
   };
 
   const waConfirmUrl = ticketData ? `https://wa.me/${TRAINING_CONFIG.contactWhatsapp}?text=${encodeURIComponent(
-    `Halo Admin Amdara Training,\n\nSaya telah mendaftar National Public Speaking seharga Rp 399.000.\n\n` +
+    `Halo Admin Amdara Training,\n\nSaya telah mendaftar ${ticketData.trainingName} seharga Rp 399.000.\n\n` +
     `No. Registrasi: ${ticketData.ticketNumber}\n` +
     `Nama: ${ticketData.fullName}\n` +
     `Email: ${ticketData.email}\n` +
@@ -124,7 +124,7 @@ Jadwal: ${ticketData.batchDate}`;
                 <Sparkles className="w-3 h-3 text-amber-400" /> Formulir Registrasi Resmi
               </div>
               <h3 className="text-xl sm:text-2xl font-extrabold text-white font-cinzel">
-                Pendaftaran National Public Speaking
+                Pendaftaran {TRAINING_CONFIG.programTitle}
               </h3>
               <p className="text-xs text-slate-300">
                 Amankan 1 dari {TRAINING_CONFIG.seatsRemaining} kursi terakhir dengan harga promo subsidi <strong className="text-amber-400">{TRAINING_CONFIG.formattedPrice}</strong>.
@@ -298,7 +298,7 @@ Jadwal: ${ticketData.batchDate}`;
                 Tiket & Data Pendaftaran Anda
               </h3>
               <p className="text-xs text-slate-300">
-                Kursi Anda di National Public Speaking telah berhasil diamankan.
+                Kursi Anda di {TRAINING_CONFIG.programTitle} telah berhasil diamankan.
               </p>
             </div>
 

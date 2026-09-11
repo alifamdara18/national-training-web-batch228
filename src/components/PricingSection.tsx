@@ -160,12 +160,16 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onOpenRegister }
                 ))}
               </div>
 
-              {/* Guarantee badge */}
-              <div className="mt-4 pt-3 border-t border-slate-800/80 bg-[#0A1628] -mx-2 -mb-2 p-3 rounded-xl flex items-center gap-3">
-                <ShieldCheck className="w-8 h-8 text-amber-400 shrink-0" />
-                <div className="text-[11px] leading-tight">
-                  <span className="font-bold text-white block">Garansi Kepuasan Belajar</span>
-                  <span className="text-slate-400">Jika merasa tidak mendapat manfaat, Anda boleh mengulang di batch berikutnya secara gratis.</span>
+              {/* Guarantee badge (Risk Reversal & Conversion Booster) */}
+              <div className="mt-6 border-2 border-emerald-500/40 bg-emerald-950/20 p-4 rounded-xl flex items-start gap-4 shadow-lg shadow-emerald-500/10 transform transition-transform hover:scale-[1.02]">
+                <div className="bg-gradient-to-br from-emerald-400 to-emerald-600 rounded-full p-2.5 shrink-0 shadow-md">
+                  <ShieldCheck className="w-6 h-6 text-white" />
+                </div>
+                <div className="text-xs leading-relaxed">
+                  <span className="font-extrabold text-emerald-400 text-sm block mb-1">100% MONEY-BACK GUARANTEE</span>
+                  <span className="text-slate-300">
+                    Kami sangat yakin kelas ini akan mengubah cara Anda berbicara. Jika di akhir hari Anda merasa <strong>sama sekali tidak ada peningkatan kepercayaan diri</strong>, beritahu tim kami dan uang Anda akan kami kembalikan 100% tanpa potongan.
+                  </span>
                 </div>
               </div>
 

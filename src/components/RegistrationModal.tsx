@@ -237,6 +237,17 @@ Jadwal: ${ticketData.batchDate}`;
                 </div>
               </div>
 
+              {/* Jadwal Pelatihan */}
+              <div>
+                <label className="block text-xs font-semibold text-slate-300 mb-2">
+                  Jadwal Pelatihan (Angkatan Utama)
+                </label>
+                <div className="p-3 rounded-xl border border-amber-400/50 bg-amber-400/10 text-left">
+                  <span className="font-bold text-amber-400 block text-sm">{TRAINING_CONFIG.startDate}</span>
+                  <span className="text-xs text-slate-300 mt-1 block">{TRAINING_CONFIG.durationText}</span>
+                </div>
+              </div>
+
               {/* Payment Method Selector */}
               <div>
                 <label className="block text-xs font-semibold text-slate-300 mb-2">

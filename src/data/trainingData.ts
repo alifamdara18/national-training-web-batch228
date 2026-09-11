@@ -10,8 +10,8 @@ export const TRAINING_CONFIG = {
   formattedOriginalPrice: "Rp 1.250.000",
   discountPercent: 68,
   batchNumber: "Batch 18 - Nasional",
-  startDate: "26 - 28 September 2026",
-  durationText: "3 Hari Live Intensive + 1 Bulan Pendampingan",
+  startDate: "Setiap Hari Minggu (Kelas Baru)",
+  durationText: "1 Hari Full Live Intensive + 1 Bulan Pendampingan",
   seatsTotal: 50,
   seatsRemaining: 7,
   contactWhatsapp: "6281234567890", // Official Amdara Training WhatsApp

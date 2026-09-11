@@ -5,6 +5,7 @@ import { PainPoints } from './components/PainPoints';
 import { CurriculumFeatures } from './components/CurriculumFeatures';
 import { InteractiveQuiz } from './components/InteractiveQuiz';
 import { TrainerProfile } from './components/TrainerProfile';
+import { InteractiveVideoGallery } from './components/InteractiveVideoGallery';
 import { TestimonialsSection } from './components/TestimonialsSection';
 import { PricingSection } from './components/PricingSection';
 import { Footer } from './components/Footer';
@@ -45,6 +46,9 @@ export default function App() {
 
         {/* Testimoni untuk Nanti (Featured Reviews + Form Input) */}
         <TestimonialsSection />
+
+        {/* Video First Experience Gallery */}
+        <InteractiveVideoGallery />
 
         {/* Biaya & Investasi (Rp 399.000 Special Batch) */}
         <PricingSection onOpenRegister={handleOpenRegister} />

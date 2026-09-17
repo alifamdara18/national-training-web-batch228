@@ -10,6 +10,7 @@ import { TestimonialsSection } from './components/TestimonialsSection';
 import { PricingSection } from './components/PricingSection';
 import { Footer } from './components/Footer';
 import { RegistrationModal } from './components/RegistrationModal';
+import { FloatingVideoWidget } from './components/FloatingVideoWidget';
 
 export default function App() {
   const [registerModalOpen, setRegisterModalOpen] = useState(false);
@@ -62,6 +63,9 @@ export default function App() {
         isOpen={registerModalOpen}
         onClose={handleCloseRegister}
       />
+
+      {/* Floating Video Widget (Story Style) */}
+      <FloatingVideoWidget onOpenRegister={handleOpenRegister} />
     </div>
   );
 }

@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+// Landing Page Components
 import { Navbar } from './components/Navbar';
 import { HeroBanner } from './components/HeroBanner';
 import { PainPoints } from './components/PainPoints';
@@ -12,7 +15,13 @@ import { Footer } from './components/Footer';
 import { RegistrationModal } from './components/RegistrationModal';
 import { FloatingVideoWidget } from './components/FloatingVideoWidget';
 
-export default function App() {
+// LMS Components
+import { LMSLayout } from './app/lms/layout';
+import { LMSDashboard } from './app/lms/page';
+import { CoursePlayer } from './app/lms/course/[id]/page';
+import { PaymentSuccessPage } from './app/payment/success/page';
+
+function LandingPage() {
   const [registerModalOpen, setRegisterModalOpen] = useState(false);
 
   const handleOpenRegister = () => {
@@ -67,5 +76,26 @@ export default function App() {
       {/* Floating Video Widget (Story Style) */}
       <FloatingVideoWidget onOpenRegister={handleOpenRegister} />
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        {/* Marketing Funnel */}
+        <Route path="/" element={<LandingPage />} />
+        
+        {/* Payment Callback */}
+        <Route path="/payment/success" element={<PaymentSuccessPage />} />
+
+        {/* LMS Protected Area */}
+        <Route path="/lms" element={<LMSLayout />}>
+          <Route index element={<LMSDashboard />} />
+          <Route path="course/:id" element={<CoursePlayer />} />
+          {/* Tambahan route lain seperti /lms/jadwal, /lms/sertifikat dll bisa ditambahkan di sini nantinya */}
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }

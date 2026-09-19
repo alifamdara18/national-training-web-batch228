@@ -60,8 +60,12 @@ export function LMSLayout() {
                 }
               `}
             >
-              <link.icon size={20} className={({ isActive }) => isActive ? 'text-amber-400' : 'opacity-70'} />
-              <span>{link.label}</span>
+              {({ isActive }) => (
+                <>
+                  <link.icon size={20} className={isActive ? 'text-amber-400' : 'opacity-70'} />
+                  <span>{link.label}</span>
+                </>
+              )}
             </NavLink>
           ))}
         </nav>

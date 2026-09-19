@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { PlayCircle, Clock, CheckCircle, BarChart3, Trophy } from 'lucide-react';
+import { PlayCircle, Clock, CheckCircle, BarChart3, Trophy, BookOpen } from 'lucide-react';
 import type { Course } from './types';
 
 // Mock Data

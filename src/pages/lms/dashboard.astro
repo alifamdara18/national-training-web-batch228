@@ -1,0 +1,10 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import LmsDashboard from '../../components/react/LmsDashboard';
+---
+
+<Layout title="Dashboard - Innerpiece LMS">
+  {/* Render the React component inside Astro Layout */}
+  {/* Use client:only="react" to prevent hydration mismatch for client-side timer */}
+  <LmsDashboard client:only="react" />
+</Layout>

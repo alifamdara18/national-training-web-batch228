@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-950: #0B132B;
+  --color-navy-900: #0F172A;
+  --color-navy-800: #1C2541;
+  --color-navy-700: #1E293B;
+  
+  --color-gold-300: #F3D573;
+  --color-gold-400: #E5C158;
+  --color-gold-500: #D4AF37;
+  --color-gold-600: #B8962E;
+  --color-gold-700: #937620;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-navy-950);
+    color: #F8FAFC;
+  }
+  
+  /* Update default selection color */
+  ::selection {
+    background-color: rgba(212, 175, 55, 0.3);
+  }
+}

@@ -3,6 +3,21 @@ import { Video, ShieldCheck, Users, PlayCircle, BookOpen, Clock, Lock, ArrowRigh
 
 export default function LmsDashboard() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+  const [userName, setUserName] = useState('Budi');
+  const [orderId, setOrderId] = useState<string | null>(null);
+  const [packageType, setPackageType] = useState('vip');
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      const name = params.get('name');
+      const order = params.get('order_id');
+      const pkg = params.get('package');
+      if (name) setUserName(decodeURIComponent(name));
+      if (order) setOrderId(order);
+      if (pkg) setPackageType(pkg);
+    }
+  }, []);
 
   useEffect(() => {
     // Mock target date for next Sunday 19:00 WIB
@@ -32,19 +47,19 @@ export default function LmsDashboard() {
       {/* Header */}
       <header className="bg-navy-900 border-b border-gold-500/20 sticky top-0 z-10 shadow-md">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-2">
+          <a href="/" className="flex items-center gap-2 hover:opacity-90 transition-opacity">
             <div className="w-8 h-8 rounded-lg bg-gold-500 flex items-center justify-center text-navy-950 font-bold text-lg shadow-inner border border-gold-400">
               IP
             </div>
-            <span className="font-bold text-white text-lg hidden sm:block tracking-wide">Innerpiece</span>
-          </div>
+            <span className="font-bold text-white text-lg hidden sm:block tracking-wide">Innerpiece LMS</span>
+          </a>
           <div className="flex items-center gap-3">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-sm font-semibold shadow-[0_0_10px_rgba(212,175,55,0.15)]">
-              <ShieldCheck className="w-4 h-4" />
-              Terverifikasi - Batch 228
+            <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs sm:text-sm font-semibold shadow-[0_0_10px_rgba(212,175,55,0.15)]">
+              <ShieldCheck className="w-4 h-4 text-emerald-400" />
+              {orderId ? `Order: ${orderId.slice(0, 14)}...` : 'Terverifikasi - Batch 228'}
             </span>
-            <div className="w-10 h-10 rounded-full bg-navy-800 overflow-hidden border-2 border-gold-500 shadow-md">
-              <img src="https://i.pravatar.cc/150?img=11" alt="Avatar" />
+            <div className="w-10 h-10 rounded-full bg-navy-800 overflow-hidden border-2 border-gold-500 shadow-md flex items-center justify-center text-gold-400 font-bold text-sm">
+              {userName.charAt(0).toUpperCase()}
             </div>
           </div>
         </div>
@@ -53,8 +68,12 @@ export default function LmsDashboard() {
       <main className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 space-y-8">
         {/* Welcome Section */}
         <div>
-          <h1 className="text-3xl font-bold text-white">Selamat Datang, Budi! 🎉</h1>
-          <p className="text-slate-300 mt-2 text-lg">Perjalanan public speaking Anda dimulai di sini. Persiapkan diri Anda untuk sesi live.</p>
+          <h1 className="text-3xl font-bold text-white">Selamat Datang, {userName}! 🎉</h1>
+          <p className="text-slate-300 mt-2 text-lg">
+            {packageType === 'vip' 
+              ? 'Status: Akses VIP Pendampingan Aktif. Persiapkan diri Anda untuk sesi live bersama Coach Surya.'
+              : 'Status: Akses Paket Mahasiswa/Mandiri Aktif. Mulai tonton modul dan material latihan Anda.'}
+          </p>
         </div>
 
         {/* Zoom Ticket Card */}

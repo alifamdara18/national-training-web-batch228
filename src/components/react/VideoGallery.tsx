@@ -41,7 +41,7 @@ export const VIDEO_LIST: VideoItem[] = [
     title: 'Private Master Trainer Mastery - Pendampingan Intensif',
     category: 'Sesi Mentoring Private',
     tag: 'Mentoring Eksklusif',
-    description: 'Pendampingan 1-on-1 intensif membedah mental block, menyusun struktur speech memikat, dan evaluasi personal langsung dari Coach Surya.',
+    description: 'Pendampingan 1-on-1 intensif membedah mental block, menyusun struktur speech memikat, dan evaluasi personal langsung dari Master Surya Jaya Negara.',
     duration: '3:50',
   },
 ];

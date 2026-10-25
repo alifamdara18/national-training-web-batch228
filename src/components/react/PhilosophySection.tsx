@@ -21,12 +21,12 @@ const PhilosophySection = () => {
           <div className="absolute top-0 right-0 p-8 opacity-5">
             <Heart size={200} className="text-gold-500" />
           </div>
-          
+
           <h3 className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-gold-300 to-gold-500 mb-8 tracking-widest text-center">
             INNERPEACE PUBLIC SPEAKING
           </h3>
-          <p className="text-white text-center text-lg mb-8 font-medium">Sebuah ruang belajar untuk membantu kamu menemukan:</p>
-          
+          <p className="text-white text-center text-lg mb-8 font-medium">Sebuah ruang belajar untuk membantu kakak menemukan:</p>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto mb-12">
             {[
               "Ketenangan sebelum berbicara",
@@ -45,7 +45,7 @@ const PhilosophySection = () => {
 
           <div className="text-center pt-8 border-t border-navy-800 relative z-10">
             <p className="text-slate-300 text-lg leading-relaxed italic">
-              "Di sini kamu tidak dituntut langsung hebat. Kamu hanya diajak untuk mulai. Pelan-pelan. Satu latihan. Satu keberanian. Satu perubahan kecil. Sampai suatu hari kamu sadar: <strong className="text-gold-400 not-italic">Ternyata aku bisa.</strong>"
+              "Di sini Kakak tidak dituntut langsung hebat. Kakak hanya diajak untuk mulai. Pelan-pelan. Satu latihan. Satu keberanian. Satu perubahan kecil. Sampai suatu hari Kakak sadar: <strong className="text-gold-400 not-italic">Ternyata aku bisa.</strong>"
             </p>
           </div>
         </div>

@@ -28,7 +28,7 @@ export default function LmsDashboard() {
     const interval = setInterval(() => {
       const now = new Date();
       const diff = target.getTime() - now.getTime();
-      
+
       if (diff > 0) {
         setTimeLeft({
           days: Math.floor(diff / (1000 * 60 * 60 * 24)),
@@ -56,7 +56,7 @@ export default function LmsDashboard() {
           <div className="flex items-center gap-3">
             <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs sm:text-sm font-semibold shadow-[0_0_10px_rgba(212,175,55,0.15)]">
               <ShieldCheck className="w-4 h-4 text-emerald-400" />
-              {orderId ? `Order: ${orderId.slice(0, 14)}...` : 'Terverifikasi - Batch 228'}
+              {orderId ? `Order: ${orderId.slice(0, 14)}...` : 'Terverifikasi - Batch 237'}
             </span>
             <div className="w-10 h-10 rounded-full bg-navy-800 overflow-hidden border-2 border-gold-500 shadow-md flex items-center justify-center text-gold-400 font-bold text-sm">
               {userName.charAt(0).toUpperCase()}
@@ -70,8 +70,8 @@ export default function LmsDashboard() {
         <div>
           <h1 className="text-3xl font-bold text-white">Selamat Datang, {userName}! 🎉</h1>
           <p className="text-slate-300 mt-2 text-lg">
-            {packageType === 'vip' 
-              ? 'Status: Akses VIP Pendampingan Aktif. Persiapkan diri Anda untuk sesi live bersama Coach Surya.'
+            {packageType === 'vip'
+              ? 'Status: Akses VIP Pendampingan Aktif. Persiapkan diri Anda untuk sesi live bersama Master Surya Jaya Negara.'
               : 'Status: Akses Paket Mahasiswa/Mandiri Aktif. Mulai tonton modul dan material latihan Anda.'}
           </p>
         </div>
@@ -80,7 +80,7 @@ export default function LmsDashboard() {
         <div className="relative overflow-hidden bg-gradient-to-br from-navy-800 to-navy-900 rounded-3xl p-1 shadow-[0_0_30px_rgba(212,175,55,0.2)] border border-gold-500/40">
           <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-10 mix-blend-overlay"></div>
           <div className="absolute top-0 right-0 w-64 h-64 bg-gold-500/10 blur-3xl rounded-full"></div>
-          
+
           <div className="bg-navy-900/60 backdrop-blur-xl rounded-[22px] p-6 sm:p-10 text-white relative z-10">
             <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
               <div className="space-y-4 flex-1">
@@ -96,11 +96,11 @@ export default function LmsDashboard() {
                   </div>
                   <div className="flex items-center gap-2">
                     <Users className="w-5 h-5 text-gold-400" />
-                    <span>Batch 228</span>
+                    <span>Batch 237</span>
                   </div>
                 </div>
               </div>
-              
+
               <div className="bg-navy-950/80 rounded-2xl p-6 border border-gold-500/30 text-center min-w-[280px] shadow-[0_0_15px_rgba(0,0,0,0.5)]">
                 <p className="text-sm text-gold-300 mb-3 font-medium">Dimulai Dalam</p>
                 <div className="flex justify-center gap-3 mb-6">
@@ -119,7 +119,7 @@ export default function LmsDashboard() {
                 </button>
                 <div className="mt-3 text-xs text-gold-200/70 flex justify-between px-2 font-mono">
                   <span>ID: 893 2134 4452</span>
-                  <span>Pass: INNER228</span>
+                  <span>Pass: INNER237</span>
                 </div>
               </div>
             </div>
@@ -134,7 +134,7 @@ export default function LmsDashboard() {
               Materi Pendukung
             </h3>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[1, 2, 3].map((modul) => (
               <div key={modul} className="group bg-navy-800 rounded-2xl overflow-hidden border border-navy-700 shadow-lg hover:shadow-[0_0_20px_rgba(212,175,55,0.15)] hover:border-gold-500/30 transition-all hover:-translate-y-1 cursor-pointer">
@@ -169,7 +169,7 @@ export default function LmsDashboard() {
         {/* Community Banner */}
         <div className="bg-gradient-to-r from-navy-800 to-navy-900 border border-gold-500/20 rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6 relative overflow-hidden shadow-xl">
           <div className="absolute -right-10 -top-10 w-40 h-40 bg-gold-500/10 blur-3xl rounded-full"></div>
-          
+
           <div className="flex items-center gap-4 relative z-10">
             <div className="w-14 h-14 bg-gradient-to-br from-green-400 to-green-600 rounded-2xl flex items-center justify-center rotate-3 shadow-[0_0_15px_rgba(74,222,128,0.3)] border border-green-300/50">
               <Users className="w-7 h-7 text-white" />

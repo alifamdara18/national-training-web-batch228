@@ -1,6 +1,6 @@
 /**
  * Type Safety & Interfaces untuk Integrasi Payment Gateway Midtrans & Supabase
- * Amdara Batch 228
+ * Amdara Batch 237
  */
 
 export type PackageType = 'mahasiswa' | 'vip';
@@ -16,7 +16,41 @@ export type TransactionStatus =
   | 'DENY'
   | 'EXPIRE'
   | 'CANCEL'
-  | 'REFUND';
+  | 'REFUND'
+  | 'PENDING_VERIFICATION';
+
+export type AdSource = 
+  | 'Grup WA Organik'
+  | 'Meta Ads (FB/IG)'
+  | 'TikTok Ads'
+  | 'Direct / Referral';
+
+/**
+ * Payload data yang dikirimkan dari frontend CheckoutForm ke endpoint /api/checkout-manual
+ */
+export interface ManualCheckoutPayload {
+  user_name: string;
+  user_email: string;
+  user_phone: string;
+  package_type: PackageType;
+  duration?: VipDuration;
+  ad_source?: AdSource;
+  // Fallbacks / aliases
+  name?: string;
+  email?: string;
+  whatsapp?: string;
+  packageType?: PackageType;
+}
+
+export interface ZoomTicket {
+  id?: string;
+  meeting_id: string;
+  passcode: string;
+  zoom_url: string;
+  topic: string;
+  schedule_time: string;
+  host_name?: string;
+}
 
 /**
  * Payload data yang dikirimkan dari frontend CheckoutForm ke endpoint /api/checkout
@@ -27,6 +61,7 @@ export interface CheckoutPayload {
   whatsapp: string;
   packageType: PackageType;
   duration?: VipDuration;
+  ad_source?: AdSource;
 }
 
 /**

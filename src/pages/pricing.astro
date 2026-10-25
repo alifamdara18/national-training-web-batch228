@@ -1,0 +1,124 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PricingCards from '../components/react/PricingCards';
+import FloatingWhatsAppButton from '../components/react/FloatingVideoWidget';
+import { ArrowLeft, ShieldCheck, Sparkles, CheckCircle2, MessageCircle, Lock, Award, HeartHandshake } from 'lucide-react';
+---
+
+<Layout title="Pilihan Investasi Belajar - Innerpeace Public Speaking Batch 237">
+  <main class="min-h-screen relative bg-navy-950 text-slate-100 py-10 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    {/* Ambient Glow & Starfield Background */}
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-gradient-to-b from-gold-500/15 via-navy-900/50 to-transparent rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-15 pointer-events-none -z-10"></div>
+
+    <div class="max-w-6xl mx-auto relative z-10">
+      
+      {/* Top Back Navigation Bar */}
+      <div class="mb-10 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <a 
+          href="/" 
+          class="inline-flex items-center gap-2 text-sm font-semibold text-slate-300 hover:text-gold-300 transition-colors group px-4 py-2.5 rounded-2xl bg-navy-900/80 border border-gold-500/30 hover:border-gold-500/60 backdrop-blur-md shadow-lg"
+        >
+          <ArrowLeft class="w-4 h-4 text-gold-400 group-hover:-translate-x-1.5 transition-transform" />
+          <span>← Kembali ke Halaman Utama</span>
+        </a>
+        
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-navy-900/80 border border-gold-500/30 text-gold-300 text-xs font-bold shadow-[0_0_15px_rgba(212,175,55,0.2)]">
+          <Sparkles class="w-3.5 h-3.5 text-gold-400" />
+          <span>Batch 237 Resmi Dibuka • Slot Terbatas</span>
+        </div>
+      </div>
+
+      {/* Main Header */}
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs font-bold uppercase tracking-wider mb-4 shadow-sm">
+          <Award class="w-4 h-4 text-gold-400" /> Pilihan Paket & Investasi Diri
+        </div>
+
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight mb-4">
+          Pilihan Investasi Belajar <br />
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-300 via-yellow-400 to-gold-500 drop-shadow-[0_0_25px_rgba(212,175,55,0.3)]">
+            Innerpeace Public Speaking
+          </span>
+        </h1>
+        
+        <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+          Pilih paket yang paling sesuai dengan kebutuhan dan target bertumbuhmu. Belajar langsung dengan bimbingan terarah bersama <strong>Master Surya Jaya Negara</strong>.
+        </p>
+
+        {/* Trust Pills */}
+        <div class="mt-6 flex flex-wrap items-center justify-center gap-3 text-xs text-slate-300">
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-navy-900/60 border border-navy-700/80">
+            <ShieldCheck class="w-3.5 h-3.5 text-emerald-400" /> 100% Money-Back Guarantee
+          </span>
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-navy-900/60 border border-navy-700/80">
+            <CheckCircle2 class="w-3.5 h-3.5 text-gold-400" /> Akses LMS Seketika
+          </span>
+          <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-navy-900/60 border border-navy-700/80">
+            <Lock class="w-3.5 h-3.5 text-gold-400" /> Transaksi Terenkripsi & Resmi
+          </span>
+        </div>
+      </div>
+
+      {/* Pricing Cards Component with Plan Toggle & Comparison Table */}
+      <div class="relative">
+        <PricingCards client:load />
+      </div>
+
+      {/* Guarantee & Reassurance Box */}
+      <div class="mt-14 max-w-4xl mx-auto bg-gradient-to-r from-navy-900/90 via-navy-800/90 to-navy-900/90 rounded-3xl p-6 sm:p-8 border border-gold-500/30 shadow-2xl backdrop-blur-md">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center md:text-left">
+          <div class="flex flex-col items-center md:items-start gap-2.5">
+            <div class="w-10 h-10 rounded-xl bg-gold-500/20 border border-gold-500/40 flex items-center justify-center text-gold-400">
+              <ShieldCheck class="w-5 h-5" />
+            </div>
+            <h3 class="font-bold text-white text-base">Garansi Kepuasan 100%</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Jika dalam 7 hari materi dirasa tidak relevan atau tidak bermanfaat, tim Amdara siap mengembalikan investasi Anda tanpa proses berbelit.
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center md:items-start gap-2.5">
+            <div class="w-10 h-10 rounded-xl bg-gold-500/20 border border-gold-500/40 flex items-center justify-center text-gold-400">
+              <HeartHandshake class="w-5 h-5" />
+            </div>
+            <h3 class="font-bold text-white text-base">Komunitas & Mentoring</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Anda tidak belajar sendirian. Bergabung bersama 2.000+ alumni di grup WhatsApp eksklusif untuk networking dan latihan berkala.
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center md:items-start gap-2.5">
+            <div class="w-10 h-10 rounded-xl bg-gold-500/20 border border-gold-500/40 flex items-center justify-center text-gold-400">
+              <MessageCircle class="w-5 h-5" />
+            </div>
+            <h3 class="font-bold text-white text-base">Konsultasi Pra-Daftar</h3>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              Masih bingung memilih antara Paket Mahasiswa atau VIP? Tim Admin siap memandu via WhatsApp untuk paket terbaik Anda.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-8 pt-6 border-t border-navy-700/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+          <div>
+            <h4 class="text-sm font-bold text-white">Butuh Bantuan Memilih Paket?</h4>
+            <p class="text-xs text-slate-400 mt-0.5">Konsultasikan kebutuhan berbicara Anda langsung dengan Manajemen Amdara.</p>
+          </div>
+          <a
+            href="https://wa.me/6281378777838?text=Halo%20Admin%20Amdara%2C%20saya%20ingin%20konsultasi%20mengenai%20pilihan%20paket%20pelatihan%20Batch%20237."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 py-3 px-5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm border border-emerald-400/30 shadow-lg transition-all hover:scale-105 active:scale-95"
+          >
+            <MessageCircle class="w-4 h-4" />
+            <span>Chat WhatsApp Admin (081378777838)</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    {/* Floating WhatsApp Button */}
+    <FloatingWhatsAppButton client:load />
+  </main>
+</Layout>

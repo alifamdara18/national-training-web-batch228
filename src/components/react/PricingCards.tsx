@@ -88,7 +88,7 @@ const PricingCards = () => {
               </div>
               
               <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-gold-300 to-gold-500 mb-2 mt-4 text-center">Paket VIP Pendampingan</h3>
-              <p className="text-slate-300 text-sm mb-6 text-center min-h-[40px]">Bimbingan Langsung Praktik, Feedback Personal & Mentoring Intensive (Batch 228)</p>
+              <p className="text-slate-300 text-sm mb-6 text-center min-h-[40px]">Bimbingan Langsung Praktik, Feedback Personal & Mentoring Intensive (Batch 237)</p>
               
               {/* Toggle Duration */}
               <div className="bg-navy-950/70 rounded-xl p-1.5 mb-8 flex border border-navy-700/50 relative overflow-hidden">
@@ -137,7 +137,7 @@ const PricingCards = () => {
                   Ambil Paket VIP Pendampingan <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
                 <a 
-                  href={`https://wa.me/6281234567890?text=${encodeURIComponent("Halo Manajemen Amdara, saya ingin bertanya tentang Paket VIP Pendampingan Rp1,4jt Batch 228.")}`}
+                  href={`https://wa.me/6281378777838?text=${encodeURIComponent("Halo Manajemen Amdara, saya ingin bertanya tentang Paket VIP Pendampingan Rp1,4jt Batch 237.")}`}
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="w-full text-center py-2.5 text-xs text-gold-300 hover:text-white font-medium hover:underline transition-colors"

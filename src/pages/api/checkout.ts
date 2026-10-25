@@ -51,7 +51,7 @@ export const POST: APIRoute = async ({ request }) => {
     // 3. Generate Order ID Unik
     const timestamp = Date.now();
     const randomSuffix = Math.floor(1000 + Math.random() * 9000);
-    const orderId = `AMD228-${timestamp}-${randomSuffix}`;
+    const orderId = `AMD237-${timestamp}-${randomSuffix}`;
 
     // 4. Buat Transaksi Snap Token dari Midtrans (atau mock token)
     const snapResult = await createSnapToken({

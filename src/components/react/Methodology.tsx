@@ -9,7 +9,7 @@ const Methodology = () => {
         </h2>
         <div className="space-y-6 text-slate-300 text-lg sm:text-xl leading-relaxed">
           <p>
-            Di kelas ini kamu akan mengalami prosesnya. Kamu akan belajar. Kamu akan praktik. Kamu akan dibimbing. Kamu akan mencoba. Dan kamu akan diberikan ruang untuk bertumbuh tanpa harus takut dihakimi.
+            Di kelas ini Kakak akan mengalami prosesnya. Kakak akan belajar. Kakak akan praktik. kakak akan dibimbing. kakak akan mencoba. Dan kakak akan diberikan ruang untuk bertumbuh tanpa harus takut dihakimi.
           </p>
           <p className="text-white font-semibold pt-4">
             Karena kami percaya: orang berkembang lebih cepat ketika merasa aman untuk menjadi dirinya sendiri.

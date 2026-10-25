@@ -10,7 +10,7 @@ interface CoachHeroParallaxProps {
 
 export const CoachHeroParallax: React.FC<CoachHeroParallaxProps> = ({
   children,
-  imageSrc = '/coach-surya-removebg-preview.png',
+  imageSrc = '/master-surya-jayanegara-baru.png',
   className = '',
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -111,16 +111,16 @@ export const CoachHeroParallax: React.FC<CoachHeroParallaxProps> = ({
       </motion.div>
 
       {/* =========================================================================
-          LAYER 2: MAIN SUBJECT - COACH SURYA (PARALLAX + SMOOTH BOBBING HOVER)
+          LAYER 2: MAIN SUBJECT - MASTER SURYA JAYA NEGARA (PARALLAX + SMOOTH BOBBING HOVER)
          ========================================================================= */}
       <motion.div
         style={{ y: coachY }}
-        className="relative z-10 w-full max-w-[280px] sm:max-w-[340px] lg:max-w-[420px] mx-auto flex justify-center"
+        className="relative z-10 w-full max-w-[380px] sm:max-w-[500px] lg:max-w-[620px] xl:max-w-[680px] mx-auto flex justify-center overflow-visible"
       >
         {/* Smooth Bobbing / Floating Animation (Continuous organic movement) */}
         <motion.div
           animate={{
-            y: [0, -10, 0],
+            y: [0, -8, 0],
           }}
           transition={{
             duration: 4.8,
@@ -128,30 +128,34 @@ export const CoachHeroParallax: React.FC<CoachHeroParallaxProps> = ({
             ease: 'easeInOut',
           }}
           whileHover={{
-            scale: 1.025,
+            scale: 1.02,
             transition: { duration: 0.3 },
           }}
-          className="relative group cursor-pointer"
+          className="relative group cursor-pointer w-full flex justify-center overflow-visible"
         >
-          {/* Subtle Ground Shadow & Glow beneath Coach */}
-          <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-3/4 h-8 bg-black/50 blur-xl rounded-full" />
-          <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-1/2 h-6 bg-gold-500/20 blur-lg rounded-full" />
+          {/* Ground Glow beneath Coach */}
+          <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-4/5 h-8 bg-black/60 blur-xl rounded-full" />
+          <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-2/3 h-6 bg-gold-500/20 blur-lg rounded-full" />
 
           {/* Render Astro Image if passed as children, otherwise render fallback img */}
           {children ? (
-            <div className="relative filter drop-shadow-[0_15px_30px_rgba(0,0,0,0.6)] group-hover:drop-shadow-[0_20px_35px_rgba(212,175,55,0.25)] transition-all duration-300">
+            <div className="relative w-full flex justify-center filter drop-shadow-[0_20px_50px_rgba(212,175,55,0.2)] group-hover:drop-shadow-[0_25px_60px_rgba(212,175,55,0.35)] transition-all duration-300 overflow-visible">
               {children}
             </div>
           ) : (
             <img
               src={imageSrc}
-              alt="Coach Surya - Master Public Speaking Amdara Training"
-              width={408}
-              height={612}
-              className="w-full h-auto object-contain filter drop-shadow-[0_15px_30px_rgba(0,0,0,0.6)] group-hover:drop-shadow-[0_20px_35px_rgba(212,175,55,0.25)] transition-all duration-300 pointer-events-none select-none"
+              alt="Master Surya Jaya Negara - Master Trainer Public Speaking Amdara Training"
+              width={640}
+              height={486}
+              className="w-full h-auto object-contain filter drop-shadow-[0_20px_50px_rgba(212,175,55,0.2)] group-hover:drop-shadow-[0_25px_60px_rgba(212,175,55,0.35)] transition-all duration-300 pointer-events-none select-none [mask-image:linear-gradient(to_bottom,black_92%,transparent_100%)]"
               loading="eager"
             />
           )}
+
+          {/* Golden Wave & Subtle Bottom Fade */}
+          <div className="absolute -bottom-1 left-0 right-0 h-8 bg-gradient-to-t from-navy-950 via-navy-950/40 to-transparent pointer-events-none z-10" />
+          <div className="absolute -bottom-0.5 left-1/2 -translate-x-1/2 w-3/4 h-1 bg-gradient-to-r from-transparent via-gold-500/50 to-transparent blur-xs pointer-events-none z-10" />
         </motion.div>
       </motion.div>
 
@@ -159,7 +163,7 @@ export const CoachHeroParallax: React.FC<CoachHeroParallaxProps> = ({
           LAYER 3: FOREGROUND 3D FLOATING BADGES (STEREOSCOPIC DEPTH PARALLAX)
          ========================================================================= */}
       
-      {/* Top Floating Badge: Coach Surya Authority */}
+      {/* Top Floating Badge: Master Surya Jaya Negara Authority */}
       <motion.div
         style={{ y: badgeTopY }}
         animate={{
@@ -170,23 +174,23 @@ export const CoachHeroParallax: React.FC<CoachHeroParallaxProps> = ({
           repeat: Infinity,
           ease: 'easeInOut',
         }}
-        className="absolute -top-2 left-0 sm:-left-4 lg:-left-6 z-20"
+        className="absolute -top-3 left-0 sm:-left-3 lg:-left-6 z-20"
       >
-        <div className="flex items-center gap-2.5 px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-2xl bg-navy-900/85 backdrop-blur-md border border-gold-500/40 shadow-[0_12px_30px_rgba(0,0,0,0.5)] transition-transform duration-300 hover:scale-105">
+        <div className="flex items-center gap-2.5 px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-2xl bg-navy-900/90 backdrop-blur-md border border-gold-500/40 shadow-[0_12px_30px_rgba(0,0,0,0.6)] transition-transform duration-300 hover:scale-105">
           <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-gradient-to-tr from-gold-600 to-gold-400 flex items-center justify-center text-navy-950 font-bold shadow-[0_0_12px_rgba(212,175,55,0.4)] shrink-0">
             <Mic className="w-4 h-4 sm:w-5 sm:h-5 text-navy-950" />
           </div>
           <div className="text-left">
             <div className="flex items-center gap-1">
-              <span className="text-xs sm:text-sm font-extrabold text-white tracking-wide">Coach Surya</span>
+              <span className="text-xs sm:text-sm font-extrabold text-white tracking-wide">Master Surya Jaya Negara</span>
               <CheckCircle2 className="w-3.5 h-3.5 text-gold-400 fill-gold-400/20" />
             </div>
-            <p className="text-[10px] sm:text-xs text-gold-300/90 font-medium">Lead Mentor Amdara</p>
+            <p className="text-[10px] sm:text-xs text-gold-300/90 font-medium">Master Trainer Amdara</p>
           </div>
         </div>
       </motion.div>
 
-      {/* Bottom Floating Badge: 100% Praktik & Kepuasan */}
+      {/* Bottom Floating Badge: 100% Praktik & Kepuasan - Shifted so it does not block his open hand */}
       <motion.div
         style={{ y: badgeBottomY }}
         animate={{
@@ -198,9 +202,9 @@ export const CoachHeroParallax: React.FC<CoachHeroParallaxProps> = ({
           ease: 'easeInOut',
           delay: 0.5,
         }}
-        className="absolute -bottom-4 right-0 sm:-right-4 lg:-right-6 z-20"
+        className="absolute -bottom-7 right-0 sm:right-2 lg:right-4 z-20"
       >
-        <div className="flex items-center gap-3 px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-2xl bg-navy-900/90 backdrop-blur-md border border-gold-500/35 shadow-[0_14px_35px_rgba(0,0,0,0.55)] transition-transform duration-300 hover:scale-105">
+        <div className="flex items-center gap-3 px-3.5 py-2.5 sm:px-4 sm:py-3 rounded-2xl bg-navy-900/90 backdrop-blur-md border border-gold-500/35 shadow-[0_14px_35px_rgba(0,0,0,0.65)] transition-transform duration-300 hover:scale-105">
           <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-gold-500/15 border border-gold-500/30 flex items-center justify-center text-gold-400 shrink-0">
             <Award className="w-4 h-4 sm:w-5 sm:h-5 text-gold-400" />
           </div>

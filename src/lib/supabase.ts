@@ -114,3 +114,49 @@ export async function updateOrderStatus(
     return { success: false, error: err.message };
   }
 }
+
+/**
+ * Mengambil tiket zoom dari tabel `zoom_tickets` Supabase
+ * dengan fallback default jika tabel belum ada atau kosong.
+ */
+export async function getZoomTicket(): Promise<import('../types/payment').ZoomTicket> {
+  const defaultTicket: import('../types/payment').ZoomTicket = {
+    meeting_id: '822 8190 2280',
+    passcode: 'AMDARA237',
+    zoom_url: 'https://zoom.us/j/82281902280?pwd=InnerpieceBatch237Mentoring',
+    topic: 'Innerpiece Public Speaking Batch 237 - Sesi Live Mentoring Bersama Master Surya Jaya Negara',
+    schedule_time: 'Setiap Hari Minggu | 19:30 - 21:30 WIB',
+    host_name: 'Master Surya Jaya Negara & Tim Amdara Training'
+  };
+
+  try {
+    const { data, error } = await supabase
+      .from('zoom_tickets')
+      .select('*')
+      .order('id', { ascending: false })
+      .limit(1)
+      .maybeSingle();
+
+    if (error) {
+      console.warn('[Supabase getZoomTicket Warning]', error.message);
+      return defaultTicket;
+    }
+
+    if (data) {
+      return {
+        id: data.id,
+        meeting_id: data.meeting_id || defaultTicket.meeting_id,
+        passcode: data.passcode || defaultTicket.passcode,
+        zoom_url: data.zoom_url || defaultTicket.zoom_url,
+        topic: data.topic || defaultTicket.topic,
+        schedule_time: data.schedule_time || defaultTicket.schedule_time,
+        host_name: data.host_name || defaultTicket.host_name
+      };
+    }
+
+    return defaultTicket;
+  } catch (err) {
+    console.warn('[Supabase getZoomTicket Exception]', err);
+    return defaultTicket;
+  }
+}

@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import CheckoutForm from '../components/react/CheckoutForm';
-import { ArrowLeft, ShieldCheck, CheckCircle2, Lock } from 'lucide-react';
+import { ArrowLeft, ShieldCheck, CheckCircle2, Lock, Sparkles } from 'lucide-react';
 
 const planParam = Astro.url.searchParams.get('plan') || 'mahasiswa';
 const durationParam = Astro.url.searchParams.get('duration') || '3bulan';
@@ -11,8 +11,8 @@ const is1Tahun = durationParam === '1tahun';
 
 const planTitle = isVip ? 'Paket VIP Pendampingan' : 'Paket Mahasiswa / Mandiri';
 const planSubtitle = isVip 
-  ? `Batch 228 - Live Zoom Interaktif & Mentoring (${is1Tahun ? '1 Tahun' : '3 Bulan'})` 
-  : 'Batch 228 - Akses Modul Self-Paced Praktis Tanpa Zoom';
+  ? `Batch 237 - Live Zoom Interaktif & Mentoring (${is1Tahun ? '1 Tahun' : '3 Bulan'})` 
+  : 'Batch 237 - Akses Modul Self-Paced Praktis Tanpa Zoom';
 
 const normalPrice = isVip 
   ? (is1Tahun ? 'Rp 5.000.000' : 'Rp 2.500.000') 
@@ -27,7 +27,7 @@ const finalPrice = isVip
   : 'Rp 49.000';
 ---
 
-<Layout title="Checkout Pembayaran - Innerpiece Batch 228">
+<Layout title="Checkout Pembayaran - Innerpiece Batch 237">
   <div class="min-h-screen relative py-12 px-4 sm:px-6 lg:px-8 bg-navy-950">
     <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 pointer-events-none mix-blend-overlay"></div>
     
@@ -42,9 +42,13 @@ const finalPrice = isVip
       </div>
 
       <div class="text-center mb-10">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-300 text-xs font-bold tracking-wide mb-4 shadow-sm">
+          <Sparkles class="w-3.5 h-3.5 text-gold-400" />
+          <span>Pendampingan Master Surya Jaya Negara Resmi - Slot Terbatas</span>
+        </div>
         <h1 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Selesaikan Pembayaran Anda</h1>
         <p class="mt-2 text-slate-300 max-w-xl mx-auto text-sm sm:text-base">
-          Selangkah lagi menuju transformasi keberanian dan teknik public speaking terbaik Anda bersama Coach Surya.
+          Selangkah lagi menuju transformasi keberanian dan teknik public speaking terbaik Anda bersama Master Surya Jaya Negara.
         </p>
       </div>
 
@@ -76,7 +80,7 @@ const finalPrice = isVip
                 <span class="line-through decoration-red-500/70">{normalPrice}</span>
               </div>
               <div class="flex justify-between text-emerald-400 text-sm font-semibold">
-                <span>Diskon Eksklusif Batch 228</span>
+                <span>Diskon Eksklusif Batch 237</span>
                 <span>{promoDiscount}</span>
               </div>
             </div>
@@ -114,7 +118,7 @@ const finalPrice = isVip
             <div class="mt-2 p-4 rounded-2xl bg-navy-950/80 border border-navy-700 flex items-start gap-3">
               <ShieldCheck class="w-5 h-5 text-gold-400 flex-shrink-0 mt-0.5" />
               <p class="text-xs text-slate-300 leading-relaxed">
-                Pembayaran 100% aman terintegrasi Midtrans. Didukung Garansi Kepuasan Pelatihan 7 Hari.
+                Pembayaran 100% aman dan terverifikasi resmi oleh Manajemen Amdara. Didukung Garansi Kepuasan Pelatihan 7 Hari.
               </p>
             </div>
           </div>

@@ -14,10 +14,10 @@ const FinalCTA = () => {
         <div className="space-y-6 text-slate-300 text-lg sm:text-xl leading-relaxed mb-12">
           <p>Tarik napas sebentar. Lalu tanyakan pada dirimu:</p>
           <p className="text-2xl font-bold text-gold-400 italic font-serif">
-            “Kalau bukan sekarang, kapan aku memberi kesempatan kepada diriku sendiri untuk bertumbuh?”
+            "kalau saya terus malu, gerogi, malu maluin, bahkan demam panggung saat tampil di depan umum jadi apa aku nanti?”
           </p>
           <p>
-            Tidak perlu terburu-buru. Dengarkan saja jawaban dari dalam dirimu. Dan kalau hatimu berkata… <strong className="text-white">“Aku ingin mencoba.”</strong> mungkin itu sudah cukup.
+            Jika 2 bulan kedepan saya sudah minimal bisa percaya diri didepan umum, saya bisa <strong className="text-white">BAHAGIA,</strong> bahkan job terus mengalir, diundang lagi dan lagi mungkin itu Itu semua ditentukan oleh <strong className="text-white">ACTION</strong> saya sekarang.
           </p>
         </div>
 

@@ -12,7 +12,7 @@ const Methodology = () => {
             Di kelas ini Kakak akan mengalami prosesnya. Kakak akan belajar. Kakak akan praktik. kakak akan dibimbing. kakak akan mencoba. Dan kakak akan diberikan ruang untuk bertumbuh tanpa harus takut dihakimi.
           </p>
           <p className="text-white font-semibold pt-4">
-            Karena kami percaya: orang berkembang lebih cepat ketika merasa aman untuk menjadi dirinya sendiri.
+            Success Now or Never
           </p>
         </div>
       </div>

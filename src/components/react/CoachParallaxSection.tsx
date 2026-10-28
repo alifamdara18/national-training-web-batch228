@@ -220,8 +220,8 @@ export const CoachParallaxSection: React.FC<CoachParallaxSectionProps> = ({
                 <div className="text-[11px] sm:text-xs text-slate-400 mt-0.5">Lebih Alumni Terlatih</div>
               </div>
               <div>
-                <div className="text-xl sm:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-gold-300 to-gold-500">300</div>
-                <div className="text-[11px] sm:text-xs text-slate-400 mt-0.5">Batch Online</div>
+                <div className="text-xl sm:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-gold-300 to-gold-500">300+</div>
+                <div className="text-[11px] sm:text-xs text-slate-400 mt-0.5">Kelas Online</div>
               </div>
               <div>
                 <div className="text-xl sm:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-gold-300 to-gold-500">10+ Thn</div>
@@ -243,7 +243,7 @@ export const CoachParallaxSection: React.FC<CoachParallaxSectionProps> = ({
               </a>
 
               <a
-                href="https://wa.me/6281378777838?text=Halo%20Master%20Surya%20Jaya%20Negara%20dan%20Tim%20Amdara%2C%20saya%20ingin%20tanya%20tentang%20bimbingan%20Batch%20237."
+                href="https://wa.me/6281378777838?text=Halo%20Master%20Surya%20Jaya%20Negara%20dan%20Tim%20Amdara%2C%20saya%20ingin%20tanya%20tentang%20bimbingan."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 py-3.5 px-5 bg-navy-800 hover:bg-navy-700 text-slate-200 hover:text-white font-semibold text-sm rounded-xl border border-gold-500/20 transition-all"

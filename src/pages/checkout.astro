@@ -11,8 +11,8 @@ const is1Tahun = durationParam === '1tahun';
 
 const planTitle = isVip ? 'Paket VIP Pendampingan' : 'Paket Mahasiswa / Mandiri';
 const planSubtitle = isVip 
-  ? `Batch 237 - Live Zoom Interaktif & Mentoring (${is1Tahun ? '1 Tahun' : '3 Bulan'})` 
-  : 'Batch 237 - Akses Modul Self-Paced Praktis Tanpa Zoom';
+  ? `Live Zoom Interaktif & Mentoring (${is1Tahun ? '1 Tahun' : '3 Bulan'})` 
+  : 'Akses Modul Self-Paced Praktis Tanpa Zoom';
 
 const normalPrice = isVip 
   ? (is1Tahun ? 'Rp 5.000.000' : 'Rp 2.500.000') 
@@ -27,7 +27,7 @@ const finalPrice = isVip
   : 'Rp 49.000';
 ---
 
-<Layout title="Checkout Pembayaran - Innerpiece Batch 237">
+<Layout title="Checkout Pembayaran - Innerpiece Public Speaking">
   <div class="min-h-screen relative py-12 px-4 sm:px-6 lg:px-8 bg-navy-950">
     <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 pointer-events-none mix-blend-overlay"></div>
     
@@ -80,7 +80,7 @@ const finalPrice = isVip
                 <span class="line-through decoration-red-500/70">{normalPrice}</span>
               </div>
               <div class="flex justify-between text-emerald-400 text-sm font-semibold">
-                <span>Diskon Eksklusif Batch 237</span>
+                <span>Diskon Eksklusif</span>
                 <span>{promoDiscount}</span>
               </div>
             </div>

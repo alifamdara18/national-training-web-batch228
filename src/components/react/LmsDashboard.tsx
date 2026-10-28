@@ -56,7 +56,7 @@ export default function LmsDashboard() {
           <div className="flex items-center gap-3">
             <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-400 text-xs sm:text-sm font-semibold shadow-[0_0_10px_rgba(212,175,55,0.15)]">
               <ShieldCheck className="w-4 h-4 text-emerald-400" />
-              {orderId ? `Order: ${orderId.slice(0, 14)}...` : 'Terverifikasi - Batch 237'}
+              {orderId ? `Order: ${orderId.slice(0, 14)}...` : 'Terverifikasi'}
             </span>
             <div className="w-10 h-10 rounded-full bg-navy-800 overflow-hidden border-2 border-gold-500 shadow-md flex items-center justify-center text-gold-400 font-bold text-sm">
               {userName.charAt(0).toUpperCase()}
@@ -96,7 +96,7 @@ export default function LmsDashboard() {
                   </div>
                   <div className="flex items-center gap-2">
                     <Users className="w-5 h-5 text-gold-400" />
-                    <span>Batch 237</span>
+                    <span>Sesi Interaktif</span>
                   </div>
                 </div>
               </div>

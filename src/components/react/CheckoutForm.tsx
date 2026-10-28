@@ -335,7 +335,7 @@ export default function CheckoutForm({
                 <option value="Direct / Referral">Direct / Rekomendasi Teman & Alumni</option>
               </select>
               <p className="text-[11px] text-slate-400 mt-1">
-                Membantu Master Surya Jaya Negara menganalisis efektivitas channel publikasi Batch 237.
+                Membantu Master Surya Jaya Negara menganalisis efektivitas channel publikasi program.
               </p>
             </div>
           </div>
@@ -432,7 +432,7 @@ export default function CheckoutForm({
                   <div className="mt-2.5 pt-2 border-t border-navy-800 text-[11px] text-slate-400 flex flex-col sm:flex-row sm:items-center justify-between gap-1.5">
                     <span>Jumlah yang ditransfer: <strong className="text-gold-300">{formattedPrice}</strong></span>
                     <a
-                      href="https://wa.me/6281378777838?text=Halo%20Admin%20Amdara%2C%20saya%20ingin%20konsultasi%20mengenai%20pembayaran%20transfer%20BCA%20Batch%20237."
+                      href="https://wa.me/6281378777838?text=Halo%20Admin%20Amdara%2C%20saya%20ingin%20konsultasi%20mengenai%20pembayaran%20transfer%20BCA."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-emerald-400 hover:text-emerald-300 font-semibold inline-flex items-center gap-1 hover:underline"
@@ -505,7 +505,7 @@ export default function CheckoutForm({
         <div className="text-center">
           <p className="text-xs text-slate-400 flex items-center justify-center gap-1.5">
             <Lock className="w-3.5 h-3.5 text-gold-400" />
-            Data pendaftaran Anda aman & langsung terhubung ke dashboard LMS Batch 237
+            Data pendaftaran Anda aman & langsung terhubung ke dashboard LMS
           </p>
         </div>
 

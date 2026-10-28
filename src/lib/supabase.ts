@@ -123,8 +123,8 @@ export async function getZoomTicket(): Promise<import('../types/payment').ZoomTi
   const defaultTicket: import('../types/payment').ZoomTicket = {
     meeting_id: '822 8190 2280',
     passcode: 'AMDARA237',
-    zoom_url: 'https://zoom.us/j/82281902280?pwd=InnerpieceBatch237Mentoring',
-    topic: 'Innerpiece Public Speaking Batch 237 - Sesi Live Mentoring Bersama Master Surya Jaya Negara',
+    zoom_url: 'https://zoom.us/j/82281902280?pwd=InnerpieceMentoring',
+    topic: 'Innerpiece Public Speaking - Sesi Live Mentoring Bersama Master Surya Jaya Negara',
     schedule_time: 'Setiap Hari Minggu | 19:30 - 21:30 WIB',
     host_name: 'Master Surya Jaya Negara & Tim Amdara Training'
   };

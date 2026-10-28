@@ -1,6 +1,6 @@
 /**
  * Type Safety & Interfaces untuk Integrasi Payment Gateway Midtrans & Supabase
- * Amdara Batch 237
+ * Amdara Training & Consultancy
  */
 
 export type PackageType = 'mahasiswa' | 'vip';

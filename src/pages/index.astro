@@ -6,6 +6,7 @@ import CoachHeroParallax from "../components/react/CoachHeroParallax";
 import CoachParallaxSection from "../components/react/CoachParallaxSection";
 import VideoGallery from "../components/react/VideoGallery";
 import FloatingWhatsAppButton from "../components/react/FloatingVideoWidget";
+import BackgroundAudio from "../components/react/BackgroundAudio";
 import EmotionalHook from "../components/react/EmotionalHook";
 import ReflectionSection from "../components/react/ReflectionSection";
 import PhilosophySection from "../components/react/PhilosophySection";
@@ -25,7 +26,7 @@ import {
 } from "lucide-react";
 ---
 
-<Layout title="Innerpiece Public Speaking Batch 237 - Amdara Training">
+<Layout title="Innerpiece Public Speaking - Amdara Training">
   <main class="relative overflow-hidden bg-navy-950 text-slate-100">
     {/* Hero Background */}
     <div
@@ -133,7 +134,7 @@ import {
               Lihat Pilihan Paket <ArrowRight class="w-5 h-5" />
             </a> -->
             <!-- <a
-              href="https://wa.me/6281378777838?text=Halo%20Manajemen%20Amdara%20Training%2C%20saya%20ingin%20konsultasi%20mengenai%20kelas%20Public%20Speaking%20Batch%20237."
+              href="https://wa.me/6281378777838?text=Halo%20Manajemen%20Amdara%20Training%2C%20saya%20ingin%20konsultasi%20mengenai%20kelas%20Public%20Speaking."
               target="_blank"
               rel="noopener noreferrer"
               class="w-full sm:w-auto flex-1 flex items-center justify-center gap-2 py-4 px-6 bg-emerald-600/90 hover:bg-emerald-500 text-white rounded-xl font-bold text-base border border-emerald-400/30 shadow-lg transition-all hover:scale-105 active:scale-95 text-center"
@@ -383,7 +384,7 @@ import {
     >
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <p class="font-semibold text-slate-300 mb-2">
-          Amdara Training & Consultancy — Batch 237
+          Amdara Training & Consultancy
         </p>
         <p class="text-xs text-slate-500">
           Seluruh hak cipta dilindungi. Pertanyaan & Kerjasama: WhatsApp
@@ -394,5 +395,8 @@ import {
 
     {/* Floating WhatsApp Button (React Component) */}
     <FloatingWhatsAppButton client:load />
+
+    {/* Floating Background Audio Player (React Component) */}
+    <BackgroundAudio client:load />
   </main>
 </Layout>

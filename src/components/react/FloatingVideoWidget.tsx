@@ -3,7 +3,7 @@ import { MessageCircle } from 'lucide-react';
 
 export default function FloatingWhatsAppButton() {
   const waNumber = "6281378777838";
-  const defaultMsg = encodeURIComponent("Halo Manajemen Amdara Training, saya ingin konsultasi mengenai kelas Public Speaking Batch 237.");
+  const defaultMsg = encodeURIComponent("Halo Manajemen Amdara Training, saya ingin konsultasi mengenai kelas Public Speaking.");
   const waUrl = `https://wa.me/${waNumber}?text=${defaultMsg}`;
 
   return (

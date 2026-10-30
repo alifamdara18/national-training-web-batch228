@@ -33,15 +33,7 @@ const PricingCards = () => {
             <h3 className="text-2xl font-bold text-white mb-2 mt-2">Paket Mahasiswa / Mandiri</h3>
             <p className="text-slate-300 text-sm mb-6 min-h-[40px] font-medium">Solusi Praktis & Hemat Tanpa Zoom — Belajar fleksibel kapan saja tanpa mengganggu jadwal perkuliahan atau kerja.</p>
 
-            <div className="mb-8">
-              <span className="text-slate-500 line-through text-sm font-medium">Harga Normal Rp299.000</span>
-              <div className="flex items-baseline gap-1 mt-1">
-                <span className="text-xl font-bold text-white">Rp</span>
-                <span className="text-5xl font-extrabold text-white tracking-tight">49.000</span>
-              </div>
-            </div>
-
-            <ul className="space-y-4 mb-10 flex-grow">
+            <ul className="space-y-4 mb-6 flex-grow">
               {[
                 "🏆 5 x Training , 3 x Via Zoom 2x Konsultasi",
                 "🏆 5 SERTIFIKAT Nasional beserta Namanya",
@@ -60,6 +52,14 @@ const PricingCards = () => {
                 </li>
               ))}
             </ul>
+
+            <div className="pt-6 border-t border-navy-700/60 mb-6">
+              <span className="text-slate-500 line-through text-sm font-medium">Harga Normal Rp299.000</span>
+              <div className="flex items-baseline gap-1 mt-1">
+                <span className="text-xl font-bold text-white">Rp</span>
+                <span className="text-5xl font-extrabold text-white tracking-tight">49.000</span>
+              </div>
+            </div>
 
             <a href="/checkout?plan=mahasiswa" className="w-full flex items-center justify-center gap-2 py-4 px-6 bg-transparent border-2 border-gold-500/50 hover:border-gold-400 text-gold-400 hover:text-gold-300 rounded-xl font-bold transition-all hover:bg-gold-500/10 active:scale-95 group-hover:shadow-[0_0_20px_rgba(212,175,55,0.1)]">
               Daftar Paket Rp49rb <ArrowRight className="w-4 h-4 opacity-70 group-hover:translate-x-1 transition-transform" />

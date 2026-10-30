@@ -1,8 +1,8 @@
 import { createClient } from '@supabase/supabase-js';
 import type { OrderRecord, TransactionStatus } from '../types/payment';
 
-const supabaseUrl = import.meta.env.PUBLIC_SUPABASE_URL || process.env.PUBLIC_SUPABASE_URL || 'https://ehtiadlnzmapfndstszh.supabase.co';
-const supabaseAnonKey = import.meta.env.PUBLIC_SUPABASE_ANON_KEY || process.env.PUBLIC_SUPABASE_ANON_KEY || 'sb_publishable_Mgr4RPMjz3os_2bHXGJNpA_dicibaH8';
+const supabaseUrl = import.meta.env.PUBLIC_SUPABASE_URL || (typeof process !== 'undefined' ? process.env?.PUBLIC_SUPABASE_URL : undefined) || 'https://ehtiadlnzmapfndstszh.supabase.co';
+const supabaseAnonKey = import.meta.env.PUBLIC_SUPABASE_ANON_KEY || (typeof process !== 'undefined' ? process.env?.PUBLIC_SUPABASE_ANON_KEY : undefined) || 'sb_publishable_Mgr4RPMjz3os_2bHXGJNpA_dicibaH8';
 
 // Inisialisasi Supabase client resmi
 export const supabase = createClient(supabaseUrl, supabaseAnonKey);
